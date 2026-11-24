@@ -48,7 +48,7 @@ main {
 main h1 {
   text-align: center;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 45px;
 }
 
@@ -59,7 +59,22 @@ main h2 {
   font-size: 28px;
 }
 
-main p {
+main h3 {
+  text-align: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.introducao h1 {
+  color: rgb(0, 38, 99);
+}
+
+.introducao h2 {
+  color: rgb(0, 38, 99);
+}
+
+p {
   text-align: center;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
@@ -68,15 +83,22 @@ main p {
 }
 
 /* DIVS DAS AULA */
-div.titulo {
+div.accordion {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   gap: 1px;
   border: 2px solid rgb(121, 121, 121);
   padding: 5px;
   border-radius: 15px;
   margin-bottom: 10px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .titulo h2 {
@@ -87,11 +109,56 @@ div.titulo {
   text-align: left;
 }
 
-p.primeiro {
+.primeiro {
   margin-top: 50px;
 }
 
+.centro {
+  text-align: center;
+}
 
+.conteudo strong {
+  font-weight: 700;
+}
+
+.conteudo li {
+  margin-left: 40px;
+}
+
+.conteudo {
+  padding: 20px;
+}
+
+.conteudo p {
+  text-align: left;
+}
+
+p.sinais {
+  text-align: center;
+  font-weight: 100;
+  font-family: 'ASL';
+  font-size: 110px;
+}
+
+.cada img {
+  height: 150px;
+}
+
+div.exemplo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+    border-top: 2px solid black;
+}
+
+div.cada {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  padding: 5px;
+}
 
 /* FOOTER */
 
@@ -150,8 +217,4 @@ footer .voltar img, .proximo img {
 
 .accordion.aberto .conteudo {
     display: block;
-}
-
-.accordion .titulo {
-    cursor: pointer;
 }

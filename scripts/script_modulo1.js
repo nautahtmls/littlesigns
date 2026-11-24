@@ -1,7 +1,4 @@
 // ABRIR E FECHAR CONTEÚDOS
-
-// NUMEROS
-
 document.addEventListener('click', function(event) {
 
     const titulo = event.target.closest('.accordion .titulo');
